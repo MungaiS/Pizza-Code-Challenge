@@ -119,7 +119,6 @@ class RestaurantPizzas(Resource):
             db.session.add(new_pizza)
             db.session.commit()
         except ValueError:
-            # Handling validation errors
             error_message = {
                 "errors": ["validation errors"]
             }
